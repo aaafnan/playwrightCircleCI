@@ -1,16 +1,19 @@
 version: 2.1
+
+orbs:
+  jira: circleci/jira@2.0.1  # Import the Jira orb
+
 jobs:
   run-test:
     docker:
       - image: mcr.microsoft.com/playwright:v1.38.0-jammy
 
-    # Steps to the job
     steps:
       - checkout
       - run:
           name: Download dependency
           environment:
-            SECRET_KEY: SECRET_KEY 
+            SECRET_KEY: SECRET_KEY
           command: npm ci
       - run:
           name: Run tests
@@ -21,7 +24,6 @@ jobs:
       - jira/notify:
           job_type: deployment
 
-# Invoke jobs via workflows
 workflows:
   run-test-workflow:
     jobs:
