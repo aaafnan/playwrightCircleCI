@@ -60,3 +60,4 @@ function getDecryptedValue(data: string) {
     var decrypted = CryptoJS.AES.decrypt(data, process.env.SECRET_KEY);
     return decrypted.toString(CryptoJS.enc.Utf8);
 }
+// making a change for circle ci to run
