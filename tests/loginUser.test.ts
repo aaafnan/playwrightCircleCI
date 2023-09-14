@@ -61,3 +61,5 @@ function getDecryptedValue(data: string) {
     return decrypted.toString(CryptoJS.enc.Utf8);
 }
 // making a change for circle ci to run
+
+// updating a change for corcle ci and Jira

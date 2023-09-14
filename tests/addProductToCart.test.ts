@@ -51,6 +51,7 @@ test.describe("Add products to cart", async () => {
             await header.verifyLoginSuccess();
             const cartValue = await header.getCartValue();
             expect(Number(cartValue)).toBeGreaterThan(0);
+            // this is a new branch
         })
     })
 })

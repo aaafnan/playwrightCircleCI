@@ -17,6 +17,10 @@ jobs:
           command: npm run test
       - store_test_results:
           path: results.xml
+      - run: hi deploy
+      - jira/notify:
+          job_type: deployment
+
 # Invoke jobs via workflows
 workflows:
   run-test-workflow:
