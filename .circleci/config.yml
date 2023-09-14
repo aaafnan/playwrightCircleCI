@@ -23,6 +23,9 @@ jobs:
       - run: hi deploy
       - jira/notify:
           job_type: deployment
+          pipeline_number: << pipeline.number >>
+          pipeline_id: << pipeline.id >>
+
 
 workflows:
   run-test-workflow:
