@@ -20,7 +20,7 @@ jobs:
           command: npm run test
       - store_test_results:
           path: results.xml
-      - run: hi deploy
+      - run:
       - jira/notify:
           job_type: deployment
           pipeline_number: << pipeline.number >>
