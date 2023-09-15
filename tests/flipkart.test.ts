@@ -22,6 +22,6 @@ test.only("Flipkart - search and add a product to the cart", async ({ page }) =>
     await test.step("add the product to the cart", async () => {
         const result = new ResultPage(newTab);
         await result.addToCart();
-        await page.waitForTimeout(5000);
+        await page.waitForTimeout(5000); // new comment
     })
 })
