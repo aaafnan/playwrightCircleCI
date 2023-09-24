@@ -2,7 +2,8 @@ this file we have added to develop branch, so on develop branch we will provide 
 and that code will merge into master branch. Master branch is pointing to prod. and our circle CI
 will run based on master merge.
 
+this branch we created from develp branch
 
-version 1 from develop branch
+
 
 
