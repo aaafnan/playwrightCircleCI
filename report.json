@@ -74,7 +74,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 6279,
+                  "duration": 4948,
                   "errors": [],
                   "stdout": [
                     {
@@ -86,7 +86,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-09-14T18:43:38.756Z",
+                  "startTime": "2023-09-20T17:22:28.496Z",
                   "attachments": [
                     {
                       "name": "downloaded",
