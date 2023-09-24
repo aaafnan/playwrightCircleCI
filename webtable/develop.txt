@@ -3,7 +3,6 @@ and that code will merge into master branch. Master branch is pointing to prod. 
 will run based on master merge.
 
 
-this is addition to the above text, hence we need the approval to before merging into master
+version 1 from develop branch
 
-updated the user name to see the change
 
