@@ -3,6 +3,5 @@ and that code will merge into master branch. Master branch is pointing to prod. 
 will run based on master merge.
 
 
-version 1 from develop branch
 
-
+So this is the new develop branch with version 2
