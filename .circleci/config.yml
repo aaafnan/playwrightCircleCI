@@ -1,23 +1,36 @@
 version: 2.1
+
+orbs:
+  jira: circleci/jira@2.0.1  # Import the Jira orb
+
 jobs:
   run-test:
     docker:
       - image: mcr.microsoft.com/playwright:v1.38.0-jammy
 
-    # Steps to the job
     steps:
       - checkout
       - run:
+          name: Install jq
+          command: |
+            apt-get update
+            apt-get install -y jq
+      - run:
           name: Download dependency
           environment:
-            SECRET_KEY: SECRET_KEY 
+            SECRET_KEY: SECRET_KEY
           command: npm ci
       - run:
           name: Run tests
           command: npm run test
       - store_test_results:
           path: results.xml
-# Invoke jobs via workflows
+      - jira/notify:
+          job_type: deployment
+          webhook_url: "https://128227a1-b1f0-4c2b-b7b6-1b32a1afee83.hello.atlassian-dev.net/x1/oOiqxcmRnfnh8SkFCTBUhS3rZyU"
+          pipeline_number: << pipeline.number >>
+          pipeline_id: << pipeline.id >>
+
 workflows:
   run-test-workflow:
     jobs:
