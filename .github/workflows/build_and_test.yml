@@ -6,8 +6,6 @@ on:
       - master
       - develop
 
-orbs:
-  jira: circleci/jira@2.0.1  # Import the Jira orb
 env:
   SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
@@ -38,8 +36,6 @@ jobs:
         with:
           name: test-results
           path: results.xml
-      - jira/notify:
-        job_type: deployment
-        webhook_url: "https://128227a1-b1f0-4c2b-b7b6-1b32a1afee83.hello.atlassian-dev.net/x1/oOiqxcmRnfnh8SkFCTBUhS3rZyU"
+    
 
     # Add your Jira notification steps here
