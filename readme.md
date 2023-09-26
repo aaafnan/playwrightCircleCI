@@ -10,9 +10,6 @@
     - Execute test in CI/CD
     - Encryption of user data
 
-[Circle CI](https://youtu.be/MHjpsvXekmM)
-[Encryption - Crypto JS](https://www.youtube.com/watch?v=lIElnQJy7pU)
-
-### [YouTube Playlist](https://youtube.com/playlist?list=PL699Xf-_ilW7--f_NeKFz5V2Ll8thrrcr)
 
 # this is LEAR-1-Jira-integration branch
+
