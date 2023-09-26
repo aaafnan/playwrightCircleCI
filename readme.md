@@ -10,3 +10,6 @@
     - Execute test in CI/CD
     - Encryption of user data
 
+
+# this is LEAR-1-Jira-integration branch
+
